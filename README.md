@@ -34,8 +34,9 @@ workspace.gold           -- Delta, dimensional model (facts + dimensions)
 ## Repository Structure
 ```
 DataBI/
+├── setup/
+    ├── 00_metadata_setup           -- One-time setup: creates metadata tables   
 ├── notebooks/
-│   ├── 00_metadata_setup           -- One-time setup: creates metadata tables
 │   ├── 00_validation_screenshots   -- Validation queries for documentation
 │   ├── 01_A_Get_Tables_List        -- Reads pipeline_control, passes table list to Job
 │   ├── 01_B_Extract_Data_From_Source  -- Extracts one table from Azure SQL to staging
